@@ -1,10 +1,9 @@
 // State argument is note application state, only the state
 // this reducer is responsible for
-export default function (state, action) {
-  switch(action.type) {
-    case 'BOOKSELECTED':
-    return action.payload;
+export default function (state = null, action) {
+  switch (action.type) {
+    case 'BOOK_SELECTED':
+      return action.payload;
   }
-  
   return state;
 }
